@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+
+
+
+    <section class="header-titile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Registration From</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#" id="registration_form">
+
+                        <div class="form-group">
+                            <label for="">FirstName:</label> <input type="text" class="form-control" name="fname">
+                        </div>
+                        <div class="form-group">
+                            <label for="">LastName:</label> <input type="text" class="form-control" name="lname">
+                        </div>
+                        <div class="form-group">
+                            <label for="">DOB:</label> <input type="date" class="form-control" name="dob">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Security Question:</label> <select class="form-control">
+								<option>What Your First Pet Name</option>
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mobail Number:</label> <input type="text" class="form-control" name="number">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio" value="male" checked> <label class="form-check-label">
+								Male </label> <input class="form-check-input" type="radio" name="radio" value="male"> <label class="form-check-label">
+								FeMale </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Role:</label> <select class="form-control">
+								<option>Select Role</option>
+								<option value="Admin">Admin</option>
+								<option value="User">User</option>
+								<!-- <option>Other</option> -->
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Hobby:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Profile:</label> <input type="file" class="form-control-file" name="profile">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email:</label> <input type="text" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password:</label> <input type="text" class="form-control" name="password">
+                        </div>
+
+                        <div class="form-group">
+                            <div id="example-1" class="content" data-mfield-options='{"section": ".group","btnAdd":"#btnAdd-1","btnRemove":".btnRemove"}'>
+                                <div class="row">
+                                    <div class="col-md-12"><button type="button" id="btnAdd-1" class="btn btn-primary">Add Address</button>
+                                    </div>
+                                </div>
+                                <div class="row group ">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="hidden" class="form-control" name="addressid">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Country:</label> <input type="text" id="fname" class="form-control" name="country">
+                                            <span class="error_form" id="fname_error_message"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Address:</label>
+                                            <textarea class="form-control" name="addressline" id="address" id="" rows="5" style="resize: none;"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">PinCode:</label>
+                                            <input type="text" class="form-control" id="pincode" name="pincode">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">City:</label>
+                                            <input type="text" class="form-control" id="city" name="city">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">State:</label>
+                                            <input type="text" class="form-control" id="state" name="state">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id="remove-btn" type="button" class="btn btn-danger btnRemove">Remove</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button style="margin-top: 25px;" type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery Multifield -->
+    <script src="address-plugin/jquery.multifield.min.js"></script>
+    <script>
+        $('#example-1').multifield();
+    </script>
+    <script src="JS/custom.js"></script>
+</body>
+
+</html>
